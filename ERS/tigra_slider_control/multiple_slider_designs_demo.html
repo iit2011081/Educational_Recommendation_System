@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Tigra Slider Control - Demo #3 (Multiple Designs)</title>
+	<script language="JavaScript" src="slider.js"></script>
+</head>
+
+<body>
+<form action="multiple_slider_designs_demo.html" method="get" name="demoForm">
+<table cellpadding="2" border="0">
+<tr><td colspan="7">
+
+<input name="sliderValue" id="sliderValue1h" type="Text" size="3" onchange="A_SLIDERS[0].f_setValue(this.value)">
+<input name="sliderValue" id="sliderValue2h" type="Text" size="3" onchange="A_SLIDERS[1].f_setValue(this.value)">
+<input name="sliderValue" id="sliderValue3h" type="Text" size="3" onchange="A_SLIDERS[2].f_setValue(this.value)">
+<input name="sliderValue" id="sliderValue4h" type="Text" size="3" onchange="A_SLIDERS[3].f_setValue(this.value)">
+<input name="sliderValue" id="sliderValue5h" type="Text" size="3" onchange="A_SLIDERS[4].f_setValue(this.value)">
+<input name="sliderValue" id="sliderValue6h" type="Text" size="3" onchange="A_SLIDERS[5].f_setValue(this.value)">
+
+</td></tr>
+<tr><td colspan="7">
+<script language="JavaScript">
+	var A_TPL1h = {
+		'b_vertical' : false,
+		'b_watch': true,
+		'n_controlWidth': 120,
+		'n_controlHeight': 16,
+		'n_sliderWidth': 16,
+		'n_sliderHeight': 15,
+		'n_pathLeft' : 1,
+		'n_pathTop' : 1,
+		'n_pathLength' : 103,
+		's_imgControl': 'img/blueh_bg.gif',
+		's_imgSlider': 'img/blueh_sl.gif',
+		'n_zIndex': 1
+	}
+
+	var A_INIT1h = {
+		's_form' : 0,
+		's_name': 'sliderValue1h',
+		'n_minValue' : 0,
+		'n_maxValue' : 100,
+		'n_value' : 20,
+		'n_step' : 1
+	}
+	new slider(A_INIT1h, A_TPL1h);
+</script>
+</td></tr>
+<tr><td colspan="7">
+<script language="JavaScript">
+	var A_TPL2h = {
+		'b_vertical' : false,
+		'b_watch': true,
+		'n_controlWidth': 140,
+		'n_controlHeight': 16,
+		'n_sliderWidth': 19,
+		'n_sliderHeight': 16,
+		'n_pathLeft' : 0,
+		'n_pathTop' : 0,
+		'n_pathLength' : 121,
+		's_imgControl': 'img/sldr1v_bg.gif',
+		's_imgSlider': 'img/sldr1v_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT2h = {
+		's_form' : 0,
+		's_name': 'sliderValue2h',
+		'n_minValue' : 0,
+		'n_maxValue' : 100,
+		'n_value' : 30,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT2h, A_TPL2h);
+</script>
+</td></tr>
+<tr><td colspan="7">
+<script language="JavaScript">
+	var A_TPL3h = {
+		'b_vertical' : false,
+		'b_watch': true,
+		'n_controlWidth': 120,
+		'n_controlHeight': 16,
+		'n_sliderWidth': 19,
+		'n_sliderHeight': 16,
+		'n_pathLeft' : 1,
+		'n_pathTop' : 0,
+		'n_pathLength' : 98,
+		's_imgControl': 'img/sldr2h_bg.gif',
+		's_imgSlider': 'img/sldr2h_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT3h = {
+		's_form' : 0,
+		's_name': 'sliderValue3h',
+		'n_minValue' : 0,
+		'n_maxValue' : 100,
+		'n_value' : 50,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT3h, A_TPL3h);
+</script>
+</td></tr>
+<tr><td colspan="7">
+<script language="JavaScript">
+	var A_TPL4h = {
+		'b_vertical' : false,
+		'b_watch': true,
+		'n_controlWidth': 100,
+		'n_controlHeight': 16,
+		'n_sliderWidth': 17,
+		'n_sliderHeight': 16,
+		'n_pathLeft' : 0,
+		'n_pathTop' : 0,
+		'n_pathLength' : 83,
+		's_imgControl': 'img/sldr3h_bg.gif',
+		's_imgSlider': 'img/sldr3h_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT4h = {
+		's_form' : 0,
+		's_name': 'sliderValue4h',
+		'n_minValue' : 0,
+		'n_maxValue' : 100,
+		'n_value' : 85,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT4h, A_TPL4h);
+</script>
+</td></tr>
+<tr><td colspan="7">
+<script language="JavaScript">
+	var A_TPL5h = {
+		'b_vertical' : false,
+		'b_watch': true,
+		'n_controlWidth': 108,
+		'n_controlHeight': 24,
+		'n_sliderWidth': 13,
+		'n_sliderHeight': 13,
+		'n_pathLeft' : 3,
+		'n_pathTop' : 11,
+		'n_pathLength' : 91,
+		's_imgControl': 'img/sldr4h_bg.gif',
+		's_imgSlider': 'img/sldr4h_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT5h = {
+		's_form' : 0,
+		's_name': 'sliderValue5h',
+		'n_minValue' : 1,
+		'n_maxValue' : 8,
+		'n_value' : 4,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT5h, A_TPL5h);
+</script>
+</td></tr>
+<tr><td colspan="7">
+<script language="JavaScript">
+	var A_TPL6h = {
+		'b_vertical' : false,
+		'b_watch': true,
+		'n_controlWidth': 149,
+		'n_controlHeight': 17,
+		'n_sliderWidth': 9,
+		'n_sliderHeight': 17,
+		'n_pathLeft' : 1,
+		'n_pathTop' : 0,
+		'n_pathLength' : 138,
+		's_imgControl': 'img/sldr5h_bg.gif',
+		's_imgSlider': 'img/sldr5h_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT6h = {
+		's_form' : 0,
+		's_name': 'sliderValue6h',
+		'n_minValue' : 1,
+		'n_maxValue' : 18,
+		'n_value' : 10,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT6h, A_TPL6h);
+</script>
+</td></tr>
+<tr>
+<td>
+<input name="sliderValue" id="sliderValue1v" type="Text" size="3" onchange="A_SLIDERS[6].f_setValue(this.value)"><br>
+<input name="sliderValue" id="sliderValue2v" type="Text" size="3" onchange="A_SLIDERS[7].f_setValue(this.value)"><br>
+<input name="sliderValue" id="sliderValue3v" type="Text" size="3" onchange="A_SLIDERS[8].f_setValue(this.value)"><br>
+<input name="sliderValue" id="sliderValue4v" type="Text" size="3" onchange="A_SLIDERS[9].f_setValue(this.value)"><br>
+<input name="sliderValue" id="sliderValue5v" type="Text" size="3" onchange="A_SLIDERS[10].f_setValue(this.value)"><br>
+<input name="sliderValue" id="sliderValue6v" type="Text" size="3" onchange="A_SLIDERS[11].f_setValue(this.value)">
+</td>
+
+<td valign="bottom">
+<script language="JavaScript">
+	var A_TPL1v = {
+		'b_vertical' : true,
+		'b_watch': true,
+		'n_controlWidth': 16,
+		'n_controlHeight': 120,
+		'n_sliderWidth': 15,
+		'n_sliderHeight': 16,
+		'n_pathLeft' : 1,
+		'n_pathTop' : 1,
+		'n_pathLength' : 103,
+		's_imgControl': 'img/bluev_bg.gif',
+		's_imgSlider': 'img/bluev_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT1v = {
+		's_form' : 0,
+		's_name': 'sliderValue1v',
+		'n_minValue' : 0,
+		'n_maxValue' : 100,
+		'n_value' : 20,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT1v, A_TPL1v);
+</script>
+</td>
+<td valign="bottom">
+<script language="JavaScript">
+	var A_TPL2v = {
+		'b_vertical' : true,
+		'b_watch': true,
+		'n_controlWidth': 16,
+		'n_controlHeight': 140,
+		'n_sliderWidth': 16,
+		'n_sliderHeight': 19,
+		'n_pathLeft' : 0,
+		'n_pathTop' : 0,
+		'n_pathLength' : 121,
+		's_imgControl': 'img/sldr1h_bg.gif',
+		's_imgSlider': 'img/sldr1h_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT2v = {
+		's_form' : 0,
+		's_name': 'sliderValue2v',
+		'n_minValue' : 0,
+		'n_maxValue' : 100,
+		'n_value' : 30,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT2v, A_TPL2v);
+</script>
+</td>
+<td valign="bottom">
+<script language="JavaScript">
+	var A_TPL3v = {
+		'b_vertical' : true,
+		'b_watch': true,
+		'n_controlWidth': 16,
+		'n_controlHeight': 120,
+		'n_sliderWidth': 16,
+		'n_sliderHeight': 19,
+		'n_pathLeft' : 0,
+		'n_pathTop' : 1,
+		'n_pathLength' : 98,
+		's_imgControl': 'img/sldr2v_bg.gif',
+		's_imgSlider': 'img/sldr2v_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT3v = {
+		's_form' : 0,
+		's_name': 'sliderValue3v',
+		'n_minValue' : 0,
+		'n_maxValue' : 100,
+		'n_value' : 50,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT3v, A_TPL3v);
+</script>
+</td>
+<td valign="bottom">
+<script language="JavaScript">
+	var A_TPL4v = {
+		'b_vertical' : true,
+		'b_watch': true,
+		'n_controlWidth': 16,
+		'n_controlHeight': 100,
+		'n_sliderWidth': 16,
+		'n_sliderHeight': 17,
+		'n_pathLeft' : 0,
+		'n_pathTop' : 0,
+		'n_pathLength' : 83,
+		's_imgControl': 'img/sldr3v_bg.gif',
+		's_imgSlider': 'img/sldr3v_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT4v = {
+		's_form' : 0,
+		's_name': 'sliderValue4v',
+		'n_minValue' : 0,
+		'n_maxValue' : 100,
+		'n_value' : 85,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT4v, A_TPL4v);
+</script>
+</td>
+<td valign="bottom">
+<script language="JavaScript">
+	var A_TPL5v = {
+		'b_vertical' : true,
+		'b_watch': true,
+		'n_controlWidth': 24,
+		'n_controlHeight': 108,
+		'n_sliderWidth': 13,
+		'n_sliderHeight': 13,
+		'n_pathLeft' : 11,
+		'n_pathTop' : 1,
+		'n_pathLength' : 91,
+		's_imgControl': 'img/sldr4v_bg.gif',
+		's_imgSlider': 'img/sldr4v_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT5v = {
+		's_form' : 0,
+		's_name': 'sliderValue5v',
+		'n_minValue' : 1,
+		'n_maxValue' : 8,
+		'n_value' : 4,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT5v, A_TPL5v);
+</script>
+</td>
+<td valign="bottom">
+<script language="JavaScript">
+	var A_TPL6v = {
+		'b_vertical' : true,
+		'b_watch': true,
+		'n_controlWidth': 17,
+		'n_controlHeight': 149,
+		'n_sliderWidth': 17,
+		'n_sliderHeight': 9,
+		'n_pathLeft' : 1,
+		'n_pathTop' : 2,
+		'n_pathLength' : 136,
+		's_imgControl': 'img/sldr5v_bg.gif',
+		's_imgSlider': 'img/sldr5v_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT6v = {
+		's_form' : 0,
+		's_name': 'sliderValue6v',
+		'n_minValue' : 1,
+		'n_maxValue' : 18,
+		'n_value' : 10,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT6v, A_TPL6v);
+</script>
+</td>
+</tr>
+
+</table>
+<input name="Submit" type="Submit" value="Submit">
+
+</form>
+
+</body>
+</html>

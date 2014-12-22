@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>Tigra Slider Control - Demo #4 (Equalizer)</title>
+	<script language="JavaScript" src="slider.js"></script>
+	<script language="JavaScript">
+		var A_TPL1 = {
+			'b_watch': true,
+			'n_controlWidth': 103,
+			'n_pathLeft' : 31,
+			'n_minValue' : 4,
+			'n_maxValue' : 80,
+			'n_value' : 42
+		}
+
+		var A_TPL = {
+			'b_watch': false,
+			'n_controlWidth': 32,
+			'n_pathLeft' : 3,
+			'n_minValue' : -120,
+			'n_maxValue' : 120,
+			'n_step' : 1,
+			'n_value' : 0
+		}
+	
+		var A_INIT = {
+			'b_vertical' : true,
+			's_name': 'equalizer',
+			'n_controlHeight': 225,
+			'n_pathTop' : 69,
+			'n_sliderWidth': 19,
+			'n_sliderHeight': 17,
+			'n_pathLength' : 104,
+			's_imgControl': 'img/pixel.gif',
+			's_imgSlider': 'img/equalv_sl.gif',
+			'n_zIndex': 1,
+			's_form' : 0
+		}
+
+		// the code below is created soely to support this demo's functionality
+		// it is very unlikely you'll need it in your custom application		
+		var n_time = 0,
+			b_freakout = false;
+		function f_freakout () {
+			if (!b_freakout)
+				return;
+			for (var i = 1; i < 11; i++)
+				window.A_SLIDERS[i].f_setValue(Math.sin((n_time / 2 + i) / 2) * 120);
+			n_time++;
+			setTimeout('f_freakout()', 80 - window.A_SLIDERS[0].n_value);
+		}
+
+		function f_toggleFreakout() {
+			if (b_freakout) {
+				b_freakout = false;
+				document.forms['equalizerForm'].elements['freakout'].value = "Do it again!";
+			}
+			else {
+				b_freakout = true;
+				f_freakout ();
+				document.forms['equalizerForm'].elements['freakout'].value = "Stop this!";
+			}
+		}
+		
+	</script>
+</head>
+
+<body>
+
+		<table background="img/equalizer.gif" width="440" height="225" cellpadding="0" cellspacing="0" border="0" align="center">
+		<tr>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL1);</script></td>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL);</script></td>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL);</script></td>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL);</script></td>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL);</script></td>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL);</script></td>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL);</script></td>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL);</script></td>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL);</script></td>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL);</script></td>
+			<td valign="top"><script language="JavaScript">new slider(A_INIT, A_TPL);</script></td>
+			<td><img src="img/pixel.gif" alt="" width="17" height="1" border="0"></td>
+		</tr>
+		</table>
+		<form name="equalizerForm">
+		<input name="equalizer" type="Hidden">
+		<input type="Button" name="freakout" value="Freakout!" onclick="f_toggleFreakout()" ondblclick="f_toggleFreakout()">
+		</form>
+		<p>Use preamp slider to control the speed while the rest of the sliders are in motion.<br>
+		This page demonstrates the slider control, other controls of the equalizer are the static images and will not respond to the mouse events.</p>
+
+</body>
+</html>

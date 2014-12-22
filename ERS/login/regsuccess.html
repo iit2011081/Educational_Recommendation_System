@@ -1,0 +1,41 @@
+<html>
+<body>
+
+<div id="container" style="width:100%px">
+
+<div id="header" style="background-color:#99CCFF;">
+<h1 style="margin-bottom:0; font-size: xx-large;">News Recommender System</h1></div>
+
+<div id="menu" style="background-color:#CCCCCC; height:500px; width:70%; float:left; font-weight: bold; font-size: 24px; font-family: 'Times 'Times New Roman', Times, serif', cursive;">
+  <p>&nbsp;</p>
+  <p> <span style="text-align: left; font-family: 'Times 'Times New Roman', Times, serif', cursive;">New user registeration:</span></p>
+  <table border="0">
+<form action="insert.php" method="post" >   
+<tr><td width="90" height="37">Name:</td><td width="5">:</td><td width="210"><input type="text" name="name" size="30"></td></tr>
+<tr><td height="34">Email id:</td><td>:</td><td><input type="text" name="emailid" size="30"></td></tr>
+<tr><td height="38">Username</td><td>:</td><td><input type="text" name="username" size="20"></td></tr>
+<tr><td height="34">Password</td><td>:</td><td><input type="password" name="password" size="20"></td></tr>
+<tr><td height="35">&nbsp;</td><td>&nbsp;</td><td><input type="submit" value="Submit"></td></tr>
+</form>
+</table>
+<p>You have sucessfully registered. Login to continue.</p>
+</div>
+<div id="content" style="background-color:#EEEEEE; height:500px; width:30%; float:right; text-align: justify; font-family: 'Times 'Times New Roman', Times, serif', cursive; font-size: 24px;">
+  <p>Login Area:</p>
+  <p>&nbsp;</p>
+  <table width="289" height="128" border="0">
+<form method="POST" action="loginproc.php">
+<tr>
+  <td>Username:</td><td>:</td><td><input type="text" name="username" size="30"></td></tr>
+<tr><td>Password</td><td>:</td><td><input type="password" name="password" size="30"></td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td><input type="submit" value="Login"></td></tr>
+</form>
+</table>
+</div>
+<span style="text-align: left"></span>
+<div id="footer" style="background-color:##99CCFF;clear:both;text-align:center;">
+  News recommender System (IIIT A)</div>
+
+</div>
+ 
+</body>

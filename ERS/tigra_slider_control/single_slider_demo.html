@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Tigra Slider Control - Demo #1 (Single Slider)</title>
+	<script language="JavaScript" src="slider.js"></script>
+</head>
+
+<body>
+<form action="single_slider_demo.html" method="get" name="demoForm">
+<input name="sliderValue" id="sliderValue" type="Text" size="3">
+<script language="JavaScript">
+	var A_TPL = {
+		'b_vertical' : true,
+		'b_watch': true,
+		'n_controlWidth': 16,
+		'n_controlHeight': 120,
+		'n_sliderWidth': 15,
+		'n_sliderHeight': 16,
+		'n_pathLeft' : 1,
+		'n_pathTop' : 1,
+		'n_pathLength' : 103,
+		's_imgControl': 'img/bluev_bg.gif',
+		's_imgSlider': 'img/bluev_sl.gif',
+		'n_zIndex': 1
+	}
+	var A_INIT = {
+		's_form' : 0,
+		's_name': 'sliderValue',
+		'n_minValue' : 0,
+		'n_maxValue' : 100,
+		'n_value' : 20,
+		'n_step' : 1
+	}
+
+	new slider(A_INIT, A_TPL);
+</script>
+<input name="Submit" type="Submit" value="Submit">
+
+</form>
+
+
+</body>
+</html>

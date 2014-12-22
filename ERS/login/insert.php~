@@ -1,0 +1,34 @@
+<?php
+$con = mysql_connect("localhost","root","root");
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+
+mysql_select_db("news2", $con);
+
+$sql="INSERT INTO user_details (name, email_id, username, password)
+VALUES
+('$_POST[name]','$_POST[emailid]','$_POST[username]','$_POST[password]')";
+if (!mysql_query($sql,$con))
+  {
+  die('Error: ' . mysql_error());
+  }
+  
+
+
+$sql1="INSERT INTO user_behaviour (username, national, world, technical, buisness, cricket, health, science, education,sports,entertainment)
+VALUES
+('$_POST[username]','0','0','0','0','0','0','0','0','0','0')";
+
+
+
+  if (!mysql_query($sql1,$con))
+  {
+  die('Error: ' . mysql_error());
+  }
+echo "1 record added";
+ header( 'Location:http://172.19.15.71/project1/login/regsuccess.html' ) ;
+
+mysql_close($con);
+?> 
